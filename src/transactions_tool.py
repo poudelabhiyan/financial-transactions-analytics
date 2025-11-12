@@ -106,3 +106,37 @@ def detect_outliers(df):
 
 outliers = detect_outliers(clean_df)
 outliers.head()
+def monthly_summary(df):
+    """
+    Create a monthly summary of total credits and debits.
+    Groups transactions by month and type ('credit' or 'debit').
+    Returns a DataFrame showing monthly totals.
+    """
+    # Ensure the date column is in datetime format
+    df['date'] = pd.to_datetime(df['date'], errors='coerce')
+
+    # Extract the month (YYYY-MM format)
+    df['month'] = df['date'].dt.to_period('M')
+
+    # Normalize 'type' values
+    df['type'] = df['type'].astype(str).str.strip().str.lower()
+
+    # Group by month and type, sum the amount
+    monthly = (
+        df.groupby(['month', 'type'])['amount']
+        .sum()
+        .unstack(fill_value=0)
+        .reset_index()
+        .sort_values('month')
+    )
+
+    # Rename columns for clarity
+    monthly.columns.name = None
+    monthly = monthly.rename(columns={
+        'credit': 'Total Credit (Income)',
+        'debit': 'Total Debit (Expense)'
+    })
+
+    return monthly
+monthly_summary_df = monthly_summary(clean_df)
+monthly_summary_df.head(10)
