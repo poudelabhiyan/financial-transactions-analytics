@@ -69,3 +69,17 @@ Assignment2_FinancialTransactions/
 ## **License**
 This repository is created for educational purposes as part of the CPSC-620 Agile coursework at the University of Niagara Falls Canada.
 
+Project structure
+src/  Python module with reusable functions
+data/ financial_transactions.csv
+tests/ basic tests
+transactions_tool_demo.ipynb  notebook to run and view visuals
+
+How to run locally
+pip install -r requirements.txt
+python - <<EOF
+from src.transactions_tool import read_data, clean_data, summarize_income_expenses
+df = read_data("data/financial_transactions.csv")
+df = clean_data(df)
+print(summarize_income_expenses(df))
+EOF
