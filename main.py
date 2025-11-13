@@ -6,6 +6,11 @@ from src.transactions_tool import (
     detect_outliers,
     monthly_summary,
 )
+from src.visualization import (
+    plot_monthly_totals,
+    plot_top_customers,
+    plot_amount_distribution,
+)
 
 
 def main():
@@ -37,6 +42,29 @@ def main():
     print("\nOutlier Transactions (first 10 rows)")
     outliers = detect_outliers(df_clean)
     print(outliers.head(10))
+    
+     #7. Visualization part
+    print("\nCreating visualizations...")
+
+    # Monthly credit vs debit line chart
+    plot_monthly_totals(
+        monthly,
+        save_path="figures/monthly_credit_debit.png"
+    )
+
+    # Top spending customers bar chart
+    plot_top_customers(
+        top_customers,
+        save_path="figures/top_customers.png"
+    )
+
+    # Boxplot of transaction amounts
+    plot_amount_distribution(
+        df_clean,
+        save_path="figures/amount_distribution.png"
+    )
+
+    print("Figures saved in the 'figures' folder.")
 
 
 if __name__ == "__main__":
