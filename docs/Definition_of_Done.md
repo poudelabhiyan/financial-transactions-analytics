@@ -1,40 +1,63 @@
-# Definition of Done — Assignment 2: Financial Transactions Summary Tool
+Definition of Done — Assignment 2: Financial Transactions Summary Tool
 
-**Date:** November 13, 2025  
-**Team Members:** Abhiyan Poudel, Bibal Adhikari, Devarsh Ketankumar Oza, Yash Milankumar Patel  
+Date: November 13, 2025
+Team Members: Abhiyan Poudel, Bibal Adhikari, Devarsh Ketankumar Oza, Yash Milankumar Patel
 
----
+Purpose
 
-## Purpose
-The Definition of Done (DoD) lists quality criteria required for all completed tasks to ensure consistency and reliability.
+The Definition of Done establishes a shared understanding of the quality and completion standards required for all tasks in the project. It ensures that every deliverable meets the agreed expectations before being considered complete.
 
-## DoD Criteria
+DoD Criteria
+1. Code Quality
 
-### 1. Code Quality
-- No syntax or runtime errors  
-- Modular, PEP8-compliant code  
-- Clear docstrings and inline comments  
+Code runs without errors.
 
-### 2. Testing and Validation
-- Outputs verified for correctness  
-- Missing values handled  
-- Peer validation completed  
+Written in a modular and readable format.
 
-### 3. Documentation
-- README and Team Charter updated  
-- Each deliverable linked to a GitHub commit and Taiga task  
+Follows basic PEP8 guidelines.
 
-### 4. Collaboration
-- Individual branches used  
-- PR reviewed before merge  
-- Commit messages reference Taiga task ID  
+Includes clear docstrings and meaningful inline comments.
 
-### 5. Deliverable Readiness
-- Uploaded to correct folder  
-- Meets assignment specifications  
-- Approved by Product Owner  
+2. Testing and Validation
 
----
+Output has been checked for correctness.
 
-**Reviewed and Agreed by:**  
-Abhiyan Poudel | Bibal Adhikari | Devarsh Oza | Yash Patel
+Missing or incorrect values are handled appropriately.
+
+Results are validated by at least one team member.
+
+Acceptance criteria for the user story are fully satisfied.
+
+3. Documentation
+
+README is updated when changes affect usage or instructions.
+
+Required documentation files in the docs/ folder are updated as needed.
+
+Each deliverable is linked to a GitHub commit and the related Taiga user story or task.
+
+4. Collaboration
+
+Work is completed on individual branches.
+
+Pull requests are used for merging into main.
+
+Every pull request is reviewed by at least one team member before merging.
+
+Commit messages reference the related user story or task ID for traceability.
+
+5. Deliverable Readiness
+
+Final code or documentation is merged into the main branch after review.
+
+Outputs meet the technical and functional requirements of the assignment.
+
+Files are placed in the correct repository folders.
+
+Work is reviewed and accepted by the Product Owner or instructor.
+
+Reviewed and Agreed by:
+Abhiyan Poudel
+Bibal Adhikari
+Devarsh Oza
+Yash Patel
