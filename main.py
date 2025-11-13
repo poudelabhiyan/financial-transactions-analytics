@@ -12,8 +12,13 @@ from src.visualization import (
     plot_amount_distribution,
 )
 
+import os
+
 
 def main():
+    # Create folder for images
+    os.makedirs("figures", exist_ok=True)
+
     # 1. Load data from the data folder
     filepath = "data/financial_transactions.csv"
     df_raw = read_data(filepath)
@@ -42,8 +47,8 @@ def main():
     print("\nOutlier Transactions (first 10 rows)")
     outliers = detect_outliers(df_clean)
     print(outliers.head(10))
-    
-     #7. Visualization part
+
+    # 7. Visualization part
     print("\nCreating visualizations...")
 
     # Monthly credit vs debit line chart
