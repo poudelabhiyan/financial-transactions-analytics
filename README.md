@@ -1,31 +1,18 @@
 Assignment 2 – Financial Transactions Summary Tool
 Course: CPSC-620 (Version Control and Agile Collaboration)
-Team Members
-
+Team Members:
 Abhiyan Poudel
-
 Bibal Adhikari
-
 Devarsh Ketankumar Oza
-
 Yash Milankumar Patel
 
 Project Overview
-
-The Financial Transactions Summary Tool is a modular Python application that analyzes a dataset of financial transactions.
-It loads a CSV file, cleans and processes the data, and generates meaningful insights such as total income, total expenses, top spending customers, monthly financial trends, and outlier detection.
-The project follows Agile values, iterative development, and collaborative version control practices using GitHub and Taiga.
-
+The Financial Transactions Summary Tool is a modular Python application developed to analyze a dataset of financial transactions. The tool loads a CSV file, cleans and processes the data, and generates useful insights including total income, total expenses, top spending customers, monthly financial trends, and outlier detection. This project follows Agile practices and uses GitHub for version control and collaborative development.
 Key Objectives
-
-Apply Agile teamwork principles such as branching, incremental development, and pull requests.
-
-Build a set of reusable Python functions for data loading, cleaning, summarizing, and visualization.
-
-Demonstrate clean coding practices, modular design, and maintainable structure.
-
-Produce clear documentation including a Team Charter, Liftoff Notes, and Definition of Done.
-
+•	Apply Agile teamwork through branching, code reviews, and pull requests.
+•	Develop reusable Python functions for data loading, processing, summarizing, and visualization.
+•	Produce clean, organized, and well-documented code.
+•	Maintain supporting documentation including a Team Charter, Liftoff Notes, and Definition of Done.
 Repository Structure
 Assignment2_FinancialTransactions/
 │
@@ -38,126 +25,62 @@ Assignment2_FinancialTransactions/
 │   └── Definition_of_Done.md
 │
 ├── src/
-│   ├── transactions_tool.py        # Main analysis functions
-│   └── visualization.py            # Matplotlib visualizations
+│   ├── transactions_tool.py
+│   └── visualization.py
 │
 ├── tests/
-│   └── .keep                       # Placeholder for future test files
+│   └── .keep
 │
-├── main.py                         # Runs all summaries and visual outputs
+├── main.py
 ├── README.md
 └── .gitignore
-
 Core Features
-✔ Data Processing
-
-The tool includes reusable Python functions that:
-
-Load raw CSV data
-
-Clean column names and fix data types
-
-Detect missing or invalid values
-
-✔ Financial Summaries
-
-Functions generate:
-
-Total credit (income)
-
-Total debit (expense)
-
-Net balance
-
-Top spending customers
-
-Monthly-level summaries
-
-✔ Outlier Detection
-
-Identifies unusually high or low transactions using the Interquartile Range (IQR) method.
-
-✔ Visualizations (Phase 5)
-
-The visualization.py module provides:
-
-Monthly credit vs debit trend line
-
-Top customers spending bar chart
-
-Boxplot showing amount distribution and outliers
-
-These can be shown on-screen and optionally saved into a figures/ folder.
-
+Data Processing
+The tool includes functions that load the raw CSV file, standardize column names, correct data types, and handle missing values.
+Financial Summaries
+The tool provides:
+•	Total credit (income)
+•	Total debit (expense)
+•	Net balance
+•	Top spending customers
+•	Monthly activity summaries
+Outlier Detection
+A function is included to identify unusually high or low transaction amounts using the IQR method.
+Visualizations
+The visualization module produces:
+•	A monthly credit vs debit trend chart
+•	A bar chart of top spending customers
+These charts are displayed on screen and can be saved as image files.
 Agile Documentation
-
-Team_Charter.md – Team mission, working agreements, and roles.
-
-Liftoff_Notes.md – Planning notes and early decisions.
-
-Definition_of_Done.md – Criteria for completed features and tasks.
-
-Branching & Collaboration Workflow
-
-Each developer works on their own branch:
-
-abhi-dev
-
-bibal-dev
-
-devarsh-dev
-
-yash-dev
-
-Features are added through Pull Requests.
-
-Code is reviewed before merging.
-
-The main branch always contains stable, production-ready work.
-
-Commits are linked to stories/tasks in Taiga.
-
-How to Run the Project Locally
-1. Install required libraries
+•	Team_Charter.md outlines team roles, responsibilities, and mission.
+•	Liftoff_Notes.md documents early planning and decisions.
+•	Definition_of_Done.md lists the standards for completing tasks and deliverables.
+Branching and Collaboration Workflow
+•	Each team member works on an individual development branch.
+•	Pull requests are used to merge changes into the main branch.
+•	Code is reviewed before merging.
+•	The main branch always contains stable and working code.
+•	All commits are linked to tasks in Taiga for transparency.
+Running the Project Locally
+Step 1: Install dependencies
 pip install pandas matplotlib numpy
-
-2. Run the analysis
-
-In the project root directory:
-
+Step 2: Run the main script
+From the project root directory:
 python main.py
-
-
-This will:
-
-Print summary tables to the console
-
-Display all visual charts
-
-Save figures to:
-
-figures/
-
-Example: Running a Single Function
+This will print analysis summaries and generate all visual charts.
+Images will be saved in the "figures" directory.
+Example: Running Individual Functions
 from src.transactions_tool import read_data, clean_data, summarize_income_expenses
 
 df = read_data("data/financial_transactions.csv")
 df = clean_data(df)
 print(summarize_income_expenses(df))
-
-Tools & Technologies
-
-Python 3.x
-
-Git & GitHub
-
+Tools and Technologies
+Python 3
+Git and GitHub
 Taiga Project Management
-
 Matplotlib
-
-Pandas & NumPy
-
+Pandas and NumPy
 License
+This repository was created for academic use in the CPSC-620 Agile Software Development course at the University of Niagara Falls Canada.
 
-This repository was created for academic purposes as part of the
-CPSC-620 Agile Software Development course at the University of Niagara Falls Canada.
