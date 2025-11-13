@@ -1,34 +1,64 @@
-# Team Charter — Assignment 2: Financial Transactions Summary Tool
-**Course:** CPSC-620  
-**Date:** November 13, 2025  
-**Team Members:** Abhiyan Poudel, Bibal Adhikari, Devarsh Ketankumar Oza, Yash Milankumar Patel  
+Team Charter — Assignment 2: Financial Transactions Summary Tool
 
----
+Course: CPSC-620
+Date: November 13, 2025
+Team Members: Abhiyan Poudel, Bibal Adhikari, Devarsh Ketankumar Oza, Yash Milankumar Patel
 
-## 1. Mission and Vision
-To create a Python-based tool that summarizes financial transactions and provides data-driven insights, demonstrating effective Agile collaboration.
+1. Mission and Vision
 
-## 2. Roles and Responsibilities
-- **Product Owner – Abhiyan Poudel:** Defines scope, maintains backlog, ensures documentation and final submission  
-- **Scrum Master – Bibal Adhikari:** Manages Agile workflow, communication, and progress tracking  
-- **Developer – Devarsh Ketankumar Oza:** Builds and tests code modules  
-- **Developer – Yash Milankumar Patel:** Works on data preparation and visualization  
+Our mission is to develop a modular Python-based Financial Transactions Summary Tool that loads, cleans, and summarizes financial data. The vision is to demonstrate effective Agile collaboration, continuous improvement, and collective ownership of the project during the sprint.
 
-## 3. Working Agreements
-Daily messages via WhatsApp, weekly meetings on Teams, code reviewed through pull requests, and task tracking in Taiga.
+2. Roles and Responsibilities
 
-## 4. Definition of Done
-- Code runs error-free  
-- Proper documentation and comments  
-- Peer review complete  
-- Merged into main branch  
-- README updated  
+Product Owner – Abhiyan Poudel
+Responsible for defining the product vision, maintaining the backlog, clarifying requirements, and ensuring that the final deliverables meet assignment expectations.
 
-## 5. Tools and Communication
-GitHub, Taiga, Teams, and WhatsApp.
+Scrum Master – Bibal Adhikari
+Facilitates Agile activities, supports team coordination, oversees task progress, and ensures adherence to Agile practices.
 
-## 6. Risk Management
-Possible scheduling conflicts or data issues; mitigated through proactive communication and early validation.
+Developers – Devarsh Ketankumar Oza and Yash Milankumar Patel
+Responsible for implementing Python functions, testing outputs, documenting changes, and contributing to collaborative development using GitHub and Taiga.
 
-## 7. Commitment Statement
-All members agree to collaborate responsibly and uphold Agile principles throughout Assignment 2.
+3. Working Agreements
+
+Daily check-ins through WhatsApp or Teams.
+
+Weekly team meeting to discuss progress and blockers.
+
+Each member works on their own GitHub branch.
+
+Pull requests must be reviewed before merging into main.
+
+All tasks are tracked and updated regularly in Taiga.
+
+Communication is open, respectful, and solution-focused.
+
+4. Definition of Done
+
+A task is considered complete when:
+
+The code runs without errors.
+
+It follows a modular and readable structure with clear comments.
+
+Output is reviewed and validated by at least one team member.
+
+A pull request has been reviewed and merged into the main branch.
+
+Relevant documentation, including README updates, is completed.
+
+5. Tools and Communication
+
+GitHub: Version control, branching, pull requests
+
+Taiga: User stories, backlog, sprint tracking
+
+Teams and WhatsApp: Communication and coordination
+
+6. Risk Management
+
+Potential risks include scheduling conflicts, uneven workload, and dataset irregularities. These will be mitigated through early testing, proactive communication, and collaborative support among team members.
+
+7. Commitment Statement
+
+All team members agree to follow Agile principles, communicate openly, support each other, and contribute meaningfully to deliver a high-quality project within the sprint timeline.
