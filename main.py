@@ -2,74 +2,59 @@ from src.transactions_tool import (
     read_data,
     clean_data,
     summarize_income_expenses,
-    top_expense_customers,
-    detect_outliers,
+    top_expense_categories,
     monthly_summary,
-)
-from src.visualization import (
-    plot_monthly_totals,
-    plot_top_customers,
-    plot_amount_distribution,
+    detect_unusual_transactions,
+    export_summary_to_csv,
 )
 
-import os
 
+def main() -> None:
+    """
+    Simple demo runner for the Financial Transactions Summary Tool.
 
-def main():
-    # Create folder for images
-    os.makedirs("figures", exist_ok=True)
+    This script:
+    1. Reads the CSV file.
+    2. Cleans the data.
+    3. Prints income and expense summary.
+    4. Prints top expense categories.
+    5. Prints monthly summary.
+    6. Detects unusual transactions.
+    7. Exports one summary to CSV.
+    """
+    data_path = "financial_transactions.csv"
 
-    # 1. Load data from the data folder
-    filepath = "data/financial_transactions.csv"
-    df_raw = read_data(filepath)
-    print("Raw data shape:", df_raw.shape)
+    print("Reading data...")
+    df_raw = read_data(data_path)
 
-    # 2. Clean data
+    print("Cleaning data...")
     df_clean = clean_data(df_raw)
-    print("Clean data shape:", df_clean.shape)
 
-    # 3. Income vs expense summary
-    print("\nIncome and Expense Summary")
-    summary = summarize_income_expenses(df_clean)
-    print(summary)
+    print("\nIncome and expense summary")
+    income_expense_summary = summarize_income_expenses(df_clean)
+    print(income_expense_summary.to_string(index=False))
 
-    # 4. Top spending customers
-    print("\nTop Expense Customers")
-    top_customers = top_expense_customers(df_clean, n=5)
-    print(top_customers)
+    print("\nTop expense categories")
+    top_categories = top_expense_categories(df_clean, top_n=5)
+    if not top_categories.empty:
+        print(top_categories.to_string(index=False))
+    else:
+        print("No expense data available or categories not defined yet.")
 
-    # 5. Monthly summary
-    print("\nMonthly Summary (first 10 rows)")
+    print("\nMonthly income and expense summary")
     monthly = monthly_summary(df_clean)
-    print(monthly.head(10))
+    print(monthly.to_string(index=False))
 
-    # 6. Outliers
-    print("\nOutlier Transactions (first 10 rows)")
-    outliers = detect_outliers(df_clean)
-    print(outliers.head(10))
+    print("\nUnusually large transactions (automatic threshold)")
+    unusual_auto = detect_unusual_transactions(df_clean, threshold=None)
+    if unusual_auto.empty:
+        print("No unusual transactions found based on the current rule.")
+    else:
+        print(unusual_auto.to_string(index=False))
 
-    # 7. Visualization part
-    print("\nCreating visualizations...")
-
-    # Monthly credit vs debit line chart
-    plot_monthly_totals(
-        monthly,
-        save_path="figures/monthly_credit_debit.png"
-    )
-
-    # Top spending customers bar chart
-    plot_top_customers(
-        top_customers,
-        save_path="figures/top_customers.png"
-    )
-
-    # Boxplot of transaction amounts
-    plot_amount_distribution(
-        df_clean,
-        save_path="figures/amount_distribution.png"
-    )
-
-    print("Figures saved in the 'figures' folder.")
+    print("\nExporting monthly summary to CSV...")
+    export_summary_to_csv(monthly, "output/monthly_summary.csv")
+    print("Done.")
 
 
 if __name__ == "__main__":
