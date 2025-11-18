@@ -6,6 +6,7 @@ from src.transactions_tool import (
     monthly_summary,
 )
 
+#updated sample data frame
 
 def _sample_dataframe() -> pd.DataFrame:
     """
