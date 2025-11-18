@@ -101,7 +101,7 @@ def summarize_income_expenses(df: pd.DataFrame) -> pd.DataFrame:
 
     return summary
 
-
+# US4:- Top Speding Customers (by devarsh)
 def top_expense_categories(df: pd.DataFrame, top_n: int = 5) -> pd.DataFrame:
     """
     Identify the top expense categories by total amount.
