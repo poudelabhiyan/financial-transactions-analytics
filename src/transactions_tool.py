@@ -28,6 +28,7 @@ def read_data(filepath: str) -> pd.DataFrame:
 
 
 def clean_data(df: pd.DataFrame) -> pd.DataFrame:
+    # small change in clean data US2
     """
     Clean and standardize the transactions dataset.
 
