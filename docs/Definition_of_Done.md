@@ -1,63 +1,87 @@
 Definition of Done — Assignment 2: Financial Transactions Summary Tool
 
 Date: November 13, 2025
-Team Members: Abhiyan Poudel, Bibal Adhikari, Devarsh Ketankumar Oza, Yash Milankumar Patel
+Team Members:
+
+Abhiyan Poudel
+
+Bibal Adhikari
+
+Devarsh Ketankumar Oza
+
+Yash Milankumar Patel
 
 Purpose
 
-The Definition of Done establishes a shared understanding of the quality and completion standards required for all tasks in the project. It ensures that every deliverable meets the agreed expectations before being considered complete.
+The Definition of Done (DoD) establishes the shared quality standards and completion requirements for all work produced in this project. It ensures that every task, user story, and deliverable meets consistent expectations before being considered complete and ready for review or submission.
 
-DoD Criteria
+Definition of Done Criteria
 1. Code Quality
 
-Code runs without errors.
+The code executes without errors or warnings.
 
-Written in a modular and readable format.
+Code is written in a clear, modular, and maintainable format.
 
-Follows basic PEP8 guidelines.
+Naming conventions are consistent and understandable.
 
-Includes clear docstrings and meaningful inline comments.
+Basic PEP8 guidelines are followed.
+
+Each function includes a clear docstring describing its purpose, inputs, and outputs.
+
+Inline comments are used where necessary to explain complex logic.
 
 2. Testing and Validation
 
-Output has been checked for correctness.
+Outputs are manually or programmatically checked for correctness.
 
-Missing or incorrect values are handled appropriately.
+Missing, invalid, or inconsistent values are handled appropriately.
 
-Results are validated by at least one team member.
+Calculations and summaries are validated by at least one other team member.
 
-Acceptance criteria for the user story are fully satisfied.
+All acceptance criteria associated with the user story are fully met.
+
+Test files in the tests/ directory are updated or created when relevant.
 
 3. Documentation
 
-README is updated when changes affect usage or instructions.
+The README.md file is updated when functionality, workflow, or usage instructions change.
 
-Required documentation files in the docs/ folder are updated as needed.
+Required documents in the docs/ folder (Team Charter, Sprint Planning, DoD, Liftoff Notes) are updated when applicable.
 
-Each deliverable is linked to a GitHub commit and the related Taiga user story or task.
+Each completed deliverable is linked to a GitHub commit.
+
+All work is traceable to the corresponding Taiga user story or task ID.
 
 4. Collaboration
 
-Work is completed on individual branches.
+All contributions are made on dedicated feature branches.
 
-Pull requests are used for merging into main.
+Pull Requests (PRs) are used for all merges into the main branch.
 
-Every pull request is reviewed by at least one team member before merging.
+Every PR is reviewed and approved by at least one team member before merging.
 
-Commit messages reference the related user story or task ID for traceability.
+Commit messages clearly reference the related user story (US#) or task ID.
+
+No direct commits are made to the main branch.
 
 5. Deliverable Readiness
 
-Final code or documentation is merged into the main branch after review.
+Final code, documentation, or tests are merged into the main branch only after review and approval.
 
-Outputs meet the technical and functional requirements of the assignment.
+Outputs meet all functional and technical requirements of the assignment.
 
-Files are placed in the correct repository folders.
+Files are stored in the correct repository directories (data/, src/, docs/, tests/).
 
-Work is reviewed and accepted by the Product Owner or instructor.
+The Product Owner confirms that the work meets expectations and aligns with sprint goals.
 
-Reviewed and Agreed by:
+The deliverable is fully prepared for instructor review without requiring additional fixes.
+
+Reviewed and Agreed By
+
 Abhiyan Poudel
+
 Bibal Adhikari
-Devarsh Oza
-Yash Patel
+
+Devarsh Ketankumar Oza
+
+Yash Milankumar Patel
