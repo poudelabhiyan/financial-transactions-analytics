@@ -1,18 +1,23 @@
 Assignment 2 – Financial Transactions Summary Tool
-Course: CPSC-620 (Version Control and Agile Collaboration)
-Team Members:
-Abhiyan Poudel
-Bibal Adhikari
-Devarsh Ketankumar Oza
-Yash Milankumar Patel
 
-Project Overview
-The Financial Transactions Summary Tool is a modular Python application developed to analyze a dataset of financial transactions. The tool loads a CSV file, cleans and processes the data, and generates useful insights including total income, total expenses, top spending customers, monthly financial trends, and outlier detection. This project follows Agile practices and uses GitHub for version control and collaborative development.
-Key Objectives
-•	Apply Agile teamwork through branching, code reviews, and pull requests.
-•	Develop reusable Python functions for data loading, processing, summarizing, and visualization.
-•	Produce clean, organized, and well-documented code.
-•	Maintain supporting documentation including a Team Charter, Liftoff Notes, and Definition of Done.
+This repository contains the completed work for Assignment 2. The project applies Agile methodology to design and develop a modular Python tool capable of reading, cleaning, and summarizing a financial transactions dataset. Collaboration, task tracking, and sprint execution were carried out using Taiga and GitHub.
+
+Sprint Goal
+
+Develop a modular and reusable Python tool that processes financial_transactions.csv by loading the data, cleaning and preparing it, generating income and expense summaries, identifying top expense categories, producing monthly summaries, and detecting unusual transactions. All development activities must demonstrate traceability, collaboration, and adherence to Agile practices.
+
+Team Members and Roles
+
+Abhiyan Poudel – Product Owner
+
+Yash – Developer (US1)
+
+Bibal – Developer (US4)
+
+Devarsh – Developer (US2)
+
+Each member held responsibility for a set of user stories, corresponding tasks, and feature branches.
+
 Repository Structure
 Assignment2_FinancialTransactions/
 │
@@ -20,67 +25,95 @@ Assignment2_FinancialTransactions/
 │   └── financial_transactions.csv
 │
 ├── docs/
-│   ├── Team_Charter.md
+│   ├── Definition_of_Done.md
 │   ├── Liftoff_Notes.md
-│   └── Definition_of_Done.md
+│   ├── Sprint_Planning_and_User_Stories.md
+│   └── Team_Charter.md
 │
 ├── src/
 │   ├── transactions_tool.py
 │   └── visualization.py
 │
 ├── tests/
-│   └── .keep
+│   └── test_transactions_tool.py
 │
+├── .gitignore
 ├── main.py
-├── README.md
-└── .gitignore
-Core Features
-Data Processing
-The tool includes functions that load the raw CSV file, standardize column names, correct data types, and handle missing values.
-Financial Summaries
-The tool provides:
-•	Total credit (income)
-•	Total debit (expense)
-•	Net balance
-•	Top spending customers
-•	Monthly activity summaries
-Outlier Detection
-A function is included to identify unusually high or low transaction amounts using the IQR method.
-Visualizations
-The visualization module produces:
-•	A monthly credit vs debit trend chart
-•	A bar chart of top spending customers
-These charts are displayed on screen and can be saved as image files.
-Agile Documentation
-•	Team_Charter.md outlines team roles, responsibilities, and mission.
-•	Liftoff_Notes.md documents early planning and decisions.
-•	Definition_of_Done.md lists the standards for completing tasks and deliverables.
-Branching and Collaboration Workflow
-•	Each team member works on an individual development branch.
-•	Pull requests are used to merge changes into the main branch.
-•	Code is reviewed before merging.
-•	The main branch always contains stable and working code.
-•	All commits are linked to tasks in Taiga for transparency.
-Running the Project Locally
-Step 1: Install dependencies
-pip install pandas matplotlib numpy
-Step 2: Run the main script
-From the project root directory:
-python main.py
-This will print analysis summaries and generate all visual charts.
-Images will be saved in the "figures" directory.
-Example: Running Individual Functions
-from src.transactions_tool import read_data, clean_data, summarize_income_expenses
+├── requirements.txt
+└── README.md
 
-df = read_data("data/financial_transactions.csv")
-df = clean_data(df)
-print(summarize_income_expenses(df))
-Tools and Technologies
-Python 3
-Git and GitHub
-Taiga Project Management
-Matplotlib
-Pandas and NumPy
-License
-This repository was created for academic use in the CPSC-620 Agile Software Development course at the University of Niagara Falls Canada.
 
+The folder structure separates data, documentation, source code, and tests, ensuring clarity and maintainability.
+
+User Stories and Assigned Branches
+
+The sprint included six user stories. Each story was assigned to a specific team member and developed on a dedicated feature branch for traceability and version control discipline.
+
+User Story	Branch Name	Owner	Primary Function in transactions_tool.py
+US1 – Read and Load Dataset	feature/US1-read-data	Yash	read_data(filepath)
+US2 – Clean and Prepare Data	feature/US2-clean-data	Devarsh	clean_data(df)
+US3 – Income and Expense Summary	feature/US3-income-expense-summary	Abhiyan	summarize_income_expenses(df)
+US4 – Top Expense Categories	feature/US4-top-categories	Bibal	top_expense_categories(df, n=5)
+US5 – Monthly Summary	feature/US5-monthly-summary	Abhiyan	monthly_summary(df)
+US6 – Detect Unusual Transactions	feature/US6-unusual-transactions	Abhiyan	detect_unusual_transactions(df, …)
+
+Acceptance criteria, story points, and tasks for each story are documented within the Taiga project.
+
+Collaboration and Workflow
+GitHub Workflow
+
+The main branch remains protected to ensure stability.
+
+Developers work on their feature branches, committing incremental updates.
+
+When a story is completed, a Pull Request (PR) is opened to merge the feature branch into main.
+
+The Product Owner reviews PRs, provides feedback where necessary, and approves merges upon meeting the Definition of Done.
+
+After merging, related Taiga tasks are moved to Done.
+
+Taiga Workflow
+
+The team maintained transparency and organization using Taiga’s workflow:
+
+User stories with acceptance criteria and points
+
+Corresponding tasks
+
+Workflow columns: Backlog → New → In Progress → Testing → Done
+
+All sprint progress was updated regularly to reflect real-time activity
+
+Agile Process Overview
+Team Liftoff
+
+A liftoff session established the mission, vision, success priorities, communication rules, and Definition of Done. All records are included in the docs/ folder.
+
+Sprint Planning
+
+The team created a clear sprint goal, six well-defined user stories, acceptance criteria, and story point estimates. Each story was assigned to a member with a dedicated branch for implementation.
+
+Development
+
+Work proceeded in short, traceable increments. Team members used GitHub for version control, committed regularly, and opened pull requests for review. The process ensured continuous delivery of functional components.
+
+Review and Reflection
+
+A sprint reflection and a video presentation summarizing progress, challenges, and outcomes will be provided as part of the final deliverables.
+
+Running the Tool
+
+To execute or test the tool:
+
+Ensure Python is installed.
+
+Install required packages using:
+
+pip install -r requirements.txt
+
+
+Verify that financial_transactions.csv is located in the data/ directory.
+
+Run main.py or import functions from src/transactions_tool.py to generate summaries.
+
+The tool outputs income vs. expense summaries, top categories, monthly breakdowns, and unusual transaction indicators depending on the function invoked.
