@@ -74,6 +74,7 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 # US3: income expenses
+# Minor clarity update by Devarsh for US3
 def summarize_income_expenses(df: pd.DataFrame) -> pd.DataFrame:
     """
     Compute total income, total expenses, and net balance.
