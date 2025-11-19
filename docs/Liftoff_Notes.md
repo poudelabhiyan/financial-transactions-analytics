@@ -2,73 +2,71 @@ Liftoff Notes — Assignment 2: Financial Transactions Summary Tool
 
 Date: November 13, 2025
 Facilitator: Abhiyan Poudel
-Attendees: Abhiyan Poudel, Bibal Adhikari, Devarsh Ketankumar Oza, Yash Milankumar Patel
+Attendees:
 
-Mission and Outcome
+Abhiyan Poudel
 
-The mission of the team is to develop a modular and reusable Python-based Financial Transactions Summary Tool that can load, clean, and analyze a financial transactions dataset. The expected outcomes are clear summaries such as total income, total expenses, top spending patterns, and foundational visual outputs. The project will also serve as practical experience in Agile collaboration, version control, and effective teamwork.
+Bibal Adhikari
+
+Devarsh Ketankumar Oza
+
+Yash Milankumar Patel
+
+Mission and Expected Outcomes
+
+The mission of the team is to develop a modular, reusable, and well-organized Python-based Financial Transactions Summary Tool. The tool will load, clean, and analyze a financial transactions dataset to produce meaningful insights such as total income, total expenses, spending patterns, monthly trends, and unusual transaction detection.
+The project also provides structured experience with Agile teamwork, Taiga sprint management, and GitHub-based collaboration.
 
 Roles and Responsibilities
+Product Owner — Abhiyan Poudel
 
-Product Owner: Abhiyan Poudel
-Responsible for defining the vision, maintaining clarity of goals, and ensuring user stories reflect project needs.
+Defines the product vision, ensures clarity of user stories, maintains sprint focus, and reviews pull requests before merging.
 
-Scrum Master: Bibal Adhikari
-Facilitates team coordination, removes blockers, and ensures Agile practices are followed.
+Scrum Master — Bibal Adhikari
 
-Developers: Devarsh Ketankumar Oza and Yash Milankumar Patel
-Responsible for implementing functions, testing outputs, writing documentation, and managing feature branches.
+Facilitates coordination, ensures adherence to Agile practices, assists with removing blockers, and supports smooth sprint execution.
+
+Developers — Devarsh Ketankumar Oza and Yash Milankumar Patel
+
+Implement assigned user stories, write and test functions, update documentation, and work through feature branches and pull requests.
 
 Working Agreements
 
-Communication through daily updates on Teams or WhatsApp.
+Communication will occur through Microsoft Teams and WhatsApp for quick updates.
 
-Weekly check-in meeting to track progress and adjust priorities.
+Team members commit to consistent communication regarding progress or blockers.
 
-Each member works on their own GitHub branch.
+Each member works exclusively on their assigned GitHub feature branch.
 
-Pull requests must be reviewed before merging into main.
+Pull requests are required for all merges into main and must be reviewed and approved.
 
-Taiga is used to manage user stories and tasks throughout the sprint.
+Taiga will be used throughout the sprint for managing user stories, tasks, and workflow.
 
-Any confusion or conflict will be communicated early and resolved through group discussion.
+Any uncertainties or conflicts will be raised early and resolved collaboratively.
 
-Definition of Done
+Definition of Done (Agreed Summary)
 
-Code runs without errors.
+Code executes without errors and meets functional expectations.
 
-Functions contain meaningful docstrings and comments.
+Functions include meaningful docstrings, comments, and follow modular structure.
 
-Outputs are tested and validated by at least one other team member.
+Outputs are tested and validated by at least one additional team member.
 
-Pull requests must be reviewed and approved before merging.
+Pull requests require review and approval before merging.
 
-Each commit or PR references the related Taiga user story ID.
+All commits and PRs reference the appropriate Taiga user story ID for traceability.
 
 Tools and Access
 
-GitHub: Code repository, branches, pull requests.
+GitHub: Code repository, branches, commits, pull requests.
 
-Taiga: Backlog, tasks, sprint management, and progress tracking.
+Taiga: Backlog, sprint planning, task management, and progress tracking.
 
-Teams & WhatsApp: Communication and coordination.
+Teams & WhatsApp: Communication and coordination channels.
 
-Risks and Next Steps
+Status at Liftoff Completion
 
-Risks:
-
-Limited time availability across team members.
-
-Possible issues with dataset format or missing values.
-
-Coordination challenges during the sprint.
-
-Next Steps:
-
-Populate Taiga with user stories and tasks.
-
-Assign tasks for Sprint 1.
-
-Set up branches and initial commits.
-
-Begin implementing core functions and validating outputs.
+All liftoff activities have been completed.
+The team has finalized the mission, roles, working agreements, Definition of Done, tools access, and sprint structure.
+User stories, tasks, and feature branches have been created, assigned, and aligned with Taiga and GitHub.
+Following the liftoff, the team has officially started the development phase of the sprint.
