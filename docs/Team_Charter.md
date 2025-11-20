@@ -16,10 +16,10 @@ Date: November 13, 2025
 
 Our goal is to work together to build a Python-based tool that can read, clean, and summarize financial transaction data. We want our tool to clearly show income, expenses, spending patterns, and helpful monthly insights. At the same time, we aim to practice Agile teamwork, use GitHub properly, and communicate effectively.
 
-<h2>Vision
-</h2>
- - To deliver a simple but useful tool that anyone can run, understand, and build on in the future.
- - To complete the sprint in a smooth, organized way by sharing work fairly, supporting each other, and keeping clear communication.
+<h2>Vision</h2>
+  -  To deliver a simple but useful tool that anyone can run, understand, and build on in the future.
+  
+  -  To complete the sprint in a smooth, organized way by sharing work fairly, supporting each other, and keeping clear communication.
 
 <h2>Success Priorities</h2>
 
