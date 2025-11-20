@@ -45,7 +45,7 @@ The Definition of Done (DoD) establishes the shared quality standards and comple
   * Test files in the tests/ directory are updated or created when relevant.
 
 
-3. <h3>Documentation</h3>
+ <h3>3. Documentation</h3>
 
   * The README.md file is updated when functionality, workflow, or usage instructions change.
 
@@ -55,8 +55,7 @@ The Definition of Done (DoD) establishes the shared quality standards and comple
 
   * All work is traceable to the corresponding Taiga user story or task ID.
 
-
-4. <h3>Collaboration</h3>
+<h3>4. Collaboration</h3>
 
   * All contributions are made on dedicated feature branches.
 
@@ -68,8 +67,7 @@ The Definition of Done (DoD) establishes the shared quality standards and comple
 
   * No direct commits are made to the main branch.
 
-
-5. <h3>Deliverable Readiness</h3>
+<h3> 5. Deliverable Readiness</h3>
 
   * Final code, documentation, or tests are merged into the main branch only after review and approval.
 
