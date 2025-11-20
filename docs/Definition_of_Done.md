@@ -16,6 +16,7 @@ Date: November 13, 2025
 The Definition of Done (DoD) establishes the shared quality standards and completion requirements for all work produced in this project. It ensures that every task, user story, and deliverable meets consistent expectations before being considered complete and ready for review or submission.
 
 <h2>Definition of Done Criteria</h2>
+
 <h3>1. Code Quality</h3>
 
    * The code executes without errors or warnings.
@@ -30,7 +31,8 @@ The Definition of Done (DoD) establishes the shared quality standards and comple
 
   * Inline comments are used where necessary to explain complex logic.
 
-2. <h3>Testing and Validation</h3>
+
+<h3>2. Testing and Validation</h3>
 
   * Outputs are manually or programmatically checked for correctness.
 
@@ -42,6 +44,7 @@ The Definition of Done (DoD) establishes the shared quality standards and comple
 
   * Test files in the tests/ directory are updated or created when relevant.
 
+
 3. <h3>Documentation</h3>
 
   * The README.md file is updated when functionality, workflow, or usage instructions change.
@@ -51,6 +54,7 @@ The Definition of Done (DoD) establishes the shared quality standards and comple
   * Each completed deliverable is linked to a GitHub commit.
 
   * All work is traceable to the corresponding Taiga user story or task ID.
+
 
 4. <h3>Collaboration</h3>
 
@@ -64,6 +68,7 @@ The Definition of Done (DoD) establishes the shared quality standards and comple
 
   * No direct commits are made to the main branch.
 
+
 5. <h3>Deliverable Readiness</h3>
 
   * Final code, documentation, or tests are merged into the main branch only after review and approval.
@@ -75,6 +80,7 @@ The Definition of Done (DoD) establishes the shared quality standards and comple
   * The Product Owner confirms that the work meets expectations and aligns with sprint goals.
 
   * The deliverable is fully prepared for instructor review without requiring additional fixes.
+
 
 <h2>Reviewed and Agreed By</h2>
 
