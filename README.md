@@ -1,6 +1,7 @@
 Assignment 2 – Financial Transactions Summary Tool
 
-This repository contains the completed work for Assignment 2. The project applies Agile methodology to design and develop a modular Python tool capable of reading, cleaning, and summarizing a financial transactions dataset. Collaboration, task tracking, and sprint execution were carried out using Taiga and GitHub.
+This repository contains the completed work for Assignment 2. 
+The project applies Agile methodology to design and develop a modular Python tool capable of reading, cleaning, and summarizing a financial transactions dataset. Collaboration, task tracking, and sprint execution were carried out using Taiga and GitHub.
 
 Sprint Goal
 
