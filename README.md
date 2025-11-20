@@ -44,10 +44,12 @@ Financial_Transactions_Summary_Tool/
 
 The development process follows a strict branch-per-feature approach. Each user story has its own branch, and every branch is owned by specific team members. Work is merged into the main branch only after review and approval.
 
-User Story	Branch Name	Assigned Members	Primary Function
-US1 – Read and Load Dataset	feature/US1-read-data                                    	Yash	read_data(filepath)
-US2 – Clean and Prepare Data	feature/US2-clean-data	                                Yash, Devarsh	clean_data(df)
-US3 – Income and Expense Summary	feature/US3-income-expense-summary	                Abhiyan, Devarsh	summarize_income_expenses(df)
-US4 – Top Expense Categories	feature/US4-top-categories	                            Bibal	top_expense_categories(df, n=5)
-US5 – Monthly Summary	feature/US5-monthly-summary                                    	Abhiyan	monthly_summary(df)
-US6 – Detect Unusual Transactions	feature/US6-unusual-transactions	                  Abhiyan	detect_unusual_transactions(df, ...)
+| **User Story**                    | **Branch Name**                      | **Assigned Members** | **Primary Function**                   |
+| --------------------------------- | ------------------------------------ | -------------------- | -------------------------------------- |
+| US1 – Read and Load Dataset       | `feature/US1-read-data`              | Yash                 | `read_data(filepath)`                  |
+| US2 – Clean and Prepare Data      | `feature/US2-clean-data`             | Yash, Devarsh        | `clean_data(df)`                       |
+| US3 – Income and Expense Summary  | `feature/US3-income-expense-summary` | Abhiyan, Devarsh     | `summarize_income_expenses(df)`        |
+| US4 – Top Expense Categories      | `feature/US4-top-categories`         | Bibal                | `top_expense_categories(df, n=5)`      |
+| US5 – Monthly Summary             | `feature/US5-monthly-summary`        | Abhiyan              | `monthly_summary(df)`                  |
+| US6 – Detect Unusual Transactions | `feature/US6-unusual-transactions`   | Abhiyan              | `detect_unusual_transactions(df, ...)` |
+
