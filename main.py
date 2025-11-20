@@ -22,7 +22,9 @@ def main() -> None:
     6. Detects unusual transactions.
     7. Exports one summary to CSV.
     """
-    data_path = "financial_transactions.csv"
+
+    # FIXED: Correct CSV path
+    data_path = "data/financial_transactions.csv"
 
     print("Reading data...")
     df_raw = read_data(data_path)
