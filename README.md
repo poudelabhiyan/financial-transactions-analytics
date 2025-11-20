@@ -40,6 +40,7 @@ Financial_Transactions_Summary_Tool/
 ├── README.md
 └── .gitignore
 
+
 <h2>User Story Branches, Owners, and Assigned Functions</h2>
 
 The development process follows a strict branch-per-feature approach. Each user story has its own branch, and every branch is owned by specific team members. Work is merged into the main branch only after review and approval.
@@ -52,4 +53,83 @@ The development process follows a strict branch-per-feature approach. Each user 
 | US4 – Top Expense Categories      | `feature/US4-top-categories`         | Bibal                | `top_expense_categories(df, n=5)`      |
 | US5 – Monthly Summary             | `feature/US5-monthly-summary`        | Abhiyan              | `monthly_summary(df)`                  |
 | US6 – Detect Unusual Transactions | `feature/US6-unusual-transactions`   | Abhiyan              | `detect_unusual_transactions(df, ...)` |
+
+<h2>How to Run the Tool</h2>
+
+  * Clone the repository
+
+  * Ensure the dataset is placed in the data/ folder
+
+  * Install required Python packages such as pandas and numpy
+
+  * Import the module and call the functions as needed
+
+Example:
+
+from src.transactions_tool import *
+
+df = read_data("data/financial_transactions.csv")
+df_clean = clean_data(df)
+summary = summarize_income_expenses(df_clean)
+
+<h2>Collaboration and Workflow</h2>
+
+The team follows the Agile process closely:
+
+<h3>GitHub Workflow</h3>
+
+  * Each story is developed in its own feature branch
+
+  * Every commit references the user story ID (e.g., "US3: added income summary logic")
+
+  * Pull requests are reviewed before merging
+
+  * Code is kept clean, modular, and well documented
+
+<h3>Taiga Workflow</h3>
+
+  * All user stories and tasks are tracked in a private Taiga project
+
+  * Tasks move from Backlog → To Do → In Progress → Testing → Done
+
+  * Story points and acceptance criteria are recorded
+
+  * Daily updates and continuous progress are maintained throughout the sprint
+
+<h2>Core Functions in the Tool</h2>
+
+The main Python functions include:
+
+read_data(filepath)
+
+clean_data(df)
+
+summarize_income_expenses(df)
+
+top_expense_categories(df, n=5)
+
+monthly_summary(df)
+
+detect_unusual_transactions(df, ...)
+
+Each function is tied directly to a user story and developed under its respective feature branch.
+
+<h2>Testing and Validation</h2>
+
+Basic tests or assertion checks are added to ensure each function produces accurate and consistent results. These tests help validate logic and improve the reliability of the tool.
+
+<h2>Sprint Deliverables</h2>
+
+- Team Liftoff Summary
+
+- Sprint Goal
+
+- User Stories and Acceptance Criteria
+
+- Python Module (transactions_tool.py)
+
+- GitHub Commit History
+
+- Taiga Board Screenshot
+
 
