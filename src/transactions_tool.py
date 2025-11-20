@@ -1,6 +1,8 @@
 from pathlib import Path
+from typing import Optional
+
 import pandas as pd
-# Minor clarity update by Abhiyan for US5
+# Minor clarity update by Devarsh for US3
 
 
 def read_data(filepath: str) -> pd.DataFrame:
@@ -29,6 +31,7 @@ def read_data(filepath: str) -> pd.DataFrame:
 
 
 def clean_data(df: pd.DataFrame) -> pd.DataFrame:
+    # small change in clean data US2
     """
     Clean and standardize the transactions dataset.
 
@@ -74,7 +77,8 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
 
     return df
 
-
+# US3: income expenses
+# Minor clarity update by Devarsh for US3
 def summarize_income_expenses(df: pd.DataFrame) -> pd.DataFrame:
     """
     Compute total income, total expenses, and net balance.
@@ -91,7 +95,6 @@ def summarize_income_expenses(df: pd.DataFrame) -> pd.DataFrame:
 
     total_income = df.loc[df["type"] == "credit", "amount"].sum()
     total_expenses = df.loc[df["type"] == "debit", "amount"].sum()
-
     net_balance = total_income - total_expenses
 
     summary = pd.DataFrame(
@@ -104,16 +107,17 @@ def summarize_income_expenses(df: pd.DataFrame) -> pd.DataFrame:
 
     return summary
 
-# US4:- Top Speding Customers (by devarsh)
+
 def top_expense_categories(df: pd.DataFrame, top_n: int = 5) -> pd.DataFrame:
     """
     Identify the top expense categories by total amount.
 
-    NOTE:
+    Note
+    ----
     The provided dataset does not include a natural 'category' column.
-    For now, this function assumes that a 'category' column
-    may be added later. If it is missing, all expenses are
-    treated as a single 'General' category.
+    For now, this function assumes that a 'category' column may be
+    added later. If it is missing, all expenses are treated as a
+    single 'General' category.
 
     Parameters
     ----------
@@ -206,7 +210,10 @@ def detect_unusual_transactions(
     If no threshold is provided, a statistical rule is used:
     amount >= mean + 3 * standard deviation.
 
-    Returns a DataFrame of flagged transactions.
+    Returns
+    -------
+    pd.DataFrame
+        DataFrame containing only the flagged transactions.
     """
     df = df.copy()
 

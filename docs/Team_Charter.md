@@ -1,64 +1,95 @@
 Team Charter — Assignment 2: Financial Transactions Summary Tool
 
-Course: CPSC-620
+Team Members:
+
+Abhiyan Poudel
+
+Bibal Adhikari
+
+Devarsh Ketankumar Oza
+
+Yash Milankumar Patel
+
 Date: November 13, 2025
-Team Members: Abhiyan Poudel, Bibal Adhikari, Devarsh Ketankumar Oza, Yash Milankumar Patel
 
-1. Mission and Vision
+Team Mission
 
-Our mission is to develop a modular Python-based Financial Transactions Summary Tool that loads, cleans, and summarizes financial data. The vision is to demonstrate effective Agile collaboration, continuous improvement, and collective ownership of the project during the sprint.
+Our goal is to work together to build a Python-based tool that can read, clean, and summarize financial transaction data. We want our tool to clearly show income, expenses, spending patterns, and helpful monthly insights. At the same time, we aim to practice Agile teamwork, use GitHub properly, and communicate effectively.
 
-2. Roles and Responsibilities
+Vision
 
+We want to deliver a simple but useful tool that anyone can run, understand, and build on in the future.
+We also want to complete the sprint in a smooth, organized way by sharing work fairly, supporting each other, and keeping clear communication.
+
+Success Priorities
+
+We will consider this sprint successful if:
+
+The Python tool runs without errors and produces correct summaries.
+
+All user stories are completed and accepted.
+
+GitHub shows regular commits, branches, and pull requests from all members.
+
+The Taiga board reflects real progress throughout the sprint.
+
+All documents (README, liftoff, DoD, planning) are complete and clear.
+
+The team collaborates respectfully and communicates regularly.
+
+Roles
 Product Owner – Abhiyan Poudel
-Responsible for defining the product vision, maintaining the backlog, clarifying requirements, and ensuring that the final deliverables meet assignment expectations.
+
+Keeps the team focused on the main goal, clarifies user stories, reviews pull requests, and makes sure work meets expectations.
 
 Scrum Master – Bibal Adhikari
-Facilitates Agile activities, supports team coordination, oversees task progress, and ensures adherence to Agile practices.
+
+Helps the team stay organized, makes sure we follow Agile steps, and supports the team when issues come up.
 
 Developers – Devarsh Ketankumar Oza and Yash Milankumar Patel
-Responsible for implementing Python functions, testing outputs, documenting changes, and contributing to collaborative development using GitHub and Taiga.
 
-3. Working Agreements
+Work on their assigned user stories, write the functions, test outputs, and update documentation where needed.
 
-Daily check-ins through WhatsApp or Teams.
+Working Agreements
 
-Weekly team meeting to discuss progress and blockers.
+We will communicate mainly through Teams and WhatsApp.
 
-Each member works on their own GitHub branch.
+Each person will work on their own feature branch.
 
 Pull requests must be reviewed before merging into main.
 
-All tasks are tracked and updated regularly in Taiga.
+We will update Taiga regularly so the board shows real progress.
 
-Communication is open, respectful, and solution-focused.
+If anyone gets stuck, they will inform the group quickly.
 
-4. Definition of Done
+We will respect each other’s time and contributions.
 
-A task is considered complete when:
+Definition of Done (Simplified for the Charter)
 
-The code runs without errors.
+A task is “Done” when:
 
-It follows a modular and readable structure with clear comments.
+The code runs correctly and meets the story’s acceptance criteria.
 
-Output is reviewed and validated by at least one team member.
+Another team member has checked or tested it.
 
-A pull request has been reviewed and merged into the main branch.
+The pull request is reviewed and approved.
 
-Relevant documentation, including README updates, is completed.
+The Taiga task is moved to “Done.”
 
-5. Tools and Communication
+The work is committed and merged into main.
 
-GitHub: Version control, branching, pull requests
+Team Values
 
-Taiga: User stories, backlog, sprint tracking
+Clear and honest communication
 
-Teams and WhatsApp: Communication and coordination
+Respect for each other’s ideas
 
-6. Risk Management
+Consistency and reliability
 
-Potential risks include scheduling conflicts, uneven workload, and dataset irregularities. These will be mitigated through early testing, proactive communication, and collaborative support among team members.
+Helping each other when needed
 
-7. Commitment Statement
+Learning and improving together
 
-All team members agree to follow Agile principles, communicate openly, support each other, and contribute meaningfully to deliver a high-quality project within the sprint timeline.
+Agreement
+
+By participating in this liftoff, all team members agree to follow this charter, contribute fairly, communicate openly, and complete the sprint to the best of their ability.

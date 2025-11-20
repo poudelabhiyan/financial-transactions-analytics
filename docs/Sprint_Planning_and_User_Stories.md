@@ -1,192 +1,163 @@
-# Sprint Planning – Assignment 2: Financial Transactions Summary Tool
+Sprint Planning and User Stories — Assignment 2: Financial Transactions Summary Tool
 
-**Date:** November 16, 2025  
-**Sprint Duration:** 1 week  
-**Team Members:**  
-- Abhiyan Poudel  
-- Bibal Adhikari  
-- Devarsh Ketankumar Oza  
-- Yash Milankumar Patel 
+Date: November 13, 2025
+Sprint Duration: 1 week
+Team Members: Abhiyan Poudel, Bibal Adhikari, Devarsh Ketankumar Oza, Yash Milankumar Patel
 
----
+Sprint Goal
 
-## 1. Sprint Goal
+To build a working Python tool that can load, clean, and summarize the financial transactions dataset. The tool should provide clear insights such as total income, total expenses, top spending categories, monthly summaries, and unusual transactions. All work should follow Agile practices and show proper use of GitHub and Taiga.
 
-Develop a modular Python tool that can read, clean, and summarize the Financial Transactions dataset, providing clear income/expense summaries, top spending categories, unusual transaction detection, and monthly trends for basic financial insights.
+Sprint Overview
 
----
+During this sprint, the team planned the work using Taiga, broke down the project into user stories, and assigned each story to a team member. Each user story has acceptance criteria, tasks, and a feature branch linked to it.
+The sprint focuses on delivering a simple but functional version of the tool with clean code, readable outputs, and good collaboration.
 
-## 2. User Stories, Acceptance Criteria, and Estimates
+User Stories
 
-### US1 – View total income and expenses
+Below are the six user stories planned for the sprint.
+Each story follows the format: As a user, I want… so that…
 
-**Story ID:** US1  
-**As a** user  
-**I want** to view total income and total expenses  
-**So that** I can understand my overall financial balance.
+US1 — Read and Load the Dataset
 
-**Acceptance Criteria:**
+Story:
+As a user, I want the program to load the financial transactions file so that I can work with the data inside Python.
 
-- A function calculates:
-  - Total income
-  - Total expenses
-  - Net balance (income minus expenses)
-- Output is clearly labeled (for example: “Total Income”, “Total Expenses”, “Net Balance”).
-- Negative values (if any) are handled correctly and do not break the code.
-- The function can be called from `main.py` and prints a readable summary.
+Acceptance Criteria:
 
-**Story Points:** 3  
-**Owner:** Abhiyan Poudel  
+The CSV file loads without errors.
 
----
+The dataset appears with correct columns.
 
-### US2 – Identify top expense categories
+Invalid file paths show a clear error message.
 
-**Story ID:** US2  
-**As a** user  
-**I want** to see the top spending categories  
-**So that** I can understand where most of my money is going.
+Output is a clean DataFrame ready for further steps.
 
-**Acceptance Criteria:**
+Assigned To: Yash
+Branch: feature/US1-read-data
 
-- A function groups expenses by category (for example, “Food”, “Rent”, “Transport”).
-- Only expense transactions are included in the calculation (income is excluded).
-- Output shows at least the top 5 categories by total spending.
-- Results are sorted from highest to lowest spending.
-- The function returns a DataFrame or structured result that can be reused later.
+US2 — Clean and Prepare the Data
 
-**Story Points:** 3  
-**Owner:** Bibal Adhikari  
+Story:
+As a user, I want the dataset to be cleaned and prepared so that I can analyze it without issues.
 
----
+Acceptance Criteria:
 
-### US3 – Monthly income and expense summary
+Column names are consistent.
 
-**Story ID:** US3  
-**As a** user  
-**I want** to see monthly summaries of income and expenses  
-**So that** I can track trends over time.
+Missing or invalid values are handled.
 
-**Acceptance Criteria:**
+Amounts and dates are converted to proper data types.
 
-- A function groups transactions by year and month.
-- For each month, the output shows:
-  - Total income
-  - Total expenses
-  - Net balance
-- Dates are parsed correctly as datetime values.
-- Output is sorted in chronological order.
-- The result can be printed in a readable format from `main.py`.
+Cleaned output is ready for analysis.
 
-**Story Points:** 5  
-**Owner:** Devarsh Ketankumar Oza  
+Assigned To: Devarsh
+Branch: feature/US2-clean-data
 
----
+US3 — Income and Expense Summary
 
-### US4 – Detect unusually large transactions
+Story:
+As a user, I want a summary of total income, total expenses, and net balance so that I can quickly see my financial overview.
 
-**Story ID:** US4  
-**As a** user  
-**I want** to detect unusually large transactions  
-**So that** I can spot potential errors or fraud.
+Acceptance Criteria:
 
-**Acceptance Criteria:**
+Income (positive amounts) is summed correctly.
 
-- A function identifies transactions above a certain threshold (for example, greater than a set amount or based on statistical rules such as mean + 3 * standard deviation).
-- The threshold value is clearly visible in the code or passed as a parameter.
-- Output lists the flagged transactions with:
-  - Date
-  - Description (if available)
-  - Category
-  - Amount
-- The function handles both income and expense outliers.
-- No errors occur when the dataset has no outliers.
+Expenses (negative amounts) are summed correctly.
 
-**Story Points:** 5  
-**Owner:** Yash Milankumar Patel  
+Net total is calculated.
 
----
+Output is clear and easy to understand.
 
-### US5 – Clean and validate the dataset
+Assigned To: Abhiyan
+Branch: feature/US3-income-expense-summary
 
-**Story ID:** US5  
-**As a** user  
-**I want** the dataset to be cleaned and validated  
-**So that** all summaries are based on reliable data.
+US4 — Top Expense Categories
 
-**Acceptance Criteria:**
+Story:
+As a user, I want to see my top spending categories so that I know where most of my money goes.
 
-- A `clean_data` function:
-  - Standardizes column names (lowercase, no spaces).
-  - Converts dates to datetime format.
-  - Ensures the amount column is numeric.
-- Missing or invalid values in critical fields (date, amount) are handled:
-  - Either removed or replaced using a clear rule.
-- The function returns a cleaned DataFrame.
-- The cleaned DataFrame is used by all other summary functions (US1–US4).
+Acceptance Criteria:
 
-**Story Points:** 5  
-**Owner:** Abhiyan Poudel  
+Categories are grouped and sorted by expense amount.
 
----
+The top 5 categories are shown.
 
-### US6 – Export summary results
+Results are formatted clearly.
 
-**Story ID:** US6  
-**As a** user  
-**I want** to export summary results  
-**So that** I can use them in reports or dashboards later.
+Works even if some categories have missing values.
 
-**Acceptance Criteria:**
+Assigned To: Bibal
+Branch: feature/US4-top-categories
 
-- At least one summary result (for example, monthly summary or top expense categories) can be exported to a CSV file.
-- The export function allows specifying an output file name or uses a clear default.
-- The exported file is created in a logical folder (for example, `data/` or `output/`).
-- The function prints a confirmation message with the output file path.
+US5 — Monthly Summary
 
-**Story Points:** 2  
-**Owner:** Bibal Adhikari  
+Story:
+As a user, I want a month-by-month breakdown of income and expenses so that I can understand trends over time.
 
----
+Acceptance Criteria:
 
-## 3. Task Breakdown by User Story
+Transactions are grouped by month.
 
-Below is a high-level task list to guide work in Taiga. Each bullet can be added as a task under the correct user story.
+Monthly income, expenses, and net totals are shown.
 
-### US1 – View total income and expenses
-- Load cleaned dataset.
-- Implement `summarize_income_expenses` function.
-- Format and print results in `main.py`.
+Dates are handled correctly.
 
-### US2 – Identify top expense categories
-- Identify column for transaction category.
-- Implement `top_expense_categories` function.
-- Validate results with sample checks.
+Output is easy to read.
 
-### US3 – Monthly income and expense summary
-- Extract year and month from date column.
-- Implement `monthly_summary` function.
-- Verify that each month appears once in the output.
+Assigned To: Abhiyan
+Branch: feature/US5-monthly-summary
 
-### US4 – Detect unusually large transactions
-- Decide on threshold rule (fixed amount or statistical).
-- Implement `detect_outliers` or `detect_unusual_transactions` function.
-- Test with a few sample transactions.
+US6 — Detect Unusual Transactions
 
-### US5 – Clean and validate the dataset
-- Implement `read_data` function.
-- Implement `clean_data` function (dates, amounts, column names).
-- Ensure all other functions use the cleaned DataFrame.
+Story:
+As a user, I want unusual or suspicious transactions to be highlighted so that I can review them manually.
 
-### US6 – Export summary results
-- Implement `export_summary_to_csv` function.
-- Test export and open the CSV file to confirm structure.
+Acceptance Criteria:
 
----
+Unusual transactions are detected using a simple logical rule (example: very high amounts).
 
-## 4. Taiga and GitHub Links (to be updated by team)
+Output clearly lists unusual entries.
 
-- **Taiga Project URL:** _https://tree.taiga.io/project/poudelabhiyan-assignment-2-financial-transactions-summary-tool/timeline_  
-- **GitHub Repository URL:** _[https://github.com/poudelabhiyan/Assignment2_FinancialTransactions]_  
+Method handles unexpected values safely.
 
-_End of Sprint Planning document._
+User can understand why a transaction is marked unusual.
+
+Assigned To: Abhiyan
+Branch: feature/US6-unusual-transactions
+
+Task Breakdown
+
+Each user story has the following tasks:
+
+Review the dataset and understand required fields
+
+Create or update the function for the story
+
+Test the output
+
+Commit changes with a clear message referencing the US number
+
+Push changes to the feature branch
+
+Open a Pull Request for review
+
+Move the task through Taiga: New → In Progress → Testing → Done
+
+Sprint Planning Outcome
+
+By the end of planning, the team completed:
+
+A clear sprint goal
+
+Six user stories with acceptance criteria
+
+Story assignments for every team member
+
+Feature branch creation for all stories
+
+Task creation and placement in Taiga
+
+Agreement on workflow, communication, and review processes
+
+Planning is complete, and the team has moved into development.
