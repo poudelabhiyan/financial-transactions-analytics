@@ -1,161 +1,161 @@
-Sprint Planning and User Stories
+<h1>Sprint Planning and User Stories</h1>
 
-Assignment 2: Financial Transactions Summary Tool
+<h2>Assignment 2: Financial Transactions Summary Tool</h2>
 Date: November 13, 2025
 Sprint Duration: 1 Week
 Team Members: Abhiyan Poudel, Bibal Adhikari, Devarsh Ketankumar Oza, Yash Milankumar Patel
 
-Sprint Goal
+<h2>Sprint Goal</h2>
 
 To deliver a functional Python tool capable of loading, cleaning, and summarizing a financial transactions dataset. The tool should provide clear insights such as total income, total expenses, top spending categories, monthly summaries, and unusual transactions. All development must follow Agile practices and demonstrate effective collaboration through GitHub and Taiga.
 
-Sprint Overview
+<h2>Sprint Overview</h2>
 
 The team planned the sprint using Taiga, created user stories with acceptance criteria, estimated story effort, and assigned each story to designated team members.
 A branch-per-feature workflow was established on GitHub to ensure traceability and clean version control.
 The sprint focuses on delivering a minimal but working version of the tool with clean code, readable output, and consistent collaboration across all members.
 
-User Stories
-US1 — Read and Load the Dataset
+<h2>User Stories</h2>
+<h3>US1 — Read and Load the Dataset</h3>
 
 Story:
 As a user, I want the program to load the financial transactions file so that I can work with the data inside Python.
 
-Acceptance Criteria:
+<h3>Acceptance Criteria:</h3>
 
-The CSV file loads without errors.
+* The CSV file loads without errors.
 
-All expected columns appear correctly.
+* All expected columns appear correctly.
 
-Invalid file paths return a clear error message.
+* Invalid file paths return a clear error message.
 
-The output is a clean DataFrame ready for processing.
+* The output is a clean DataFrame ready for processing.
 
 Assigned To: Yash
 Branch: feature/US1-read-data
 
-US2 — Clean and Prepare the Data
+<h3>US2 — Clean and Prepare the Data</h3>
 
 Story:
 As a user, I want the dataset to be cleaned and prepared so that I can analyze it without issues.
 
-Acceptance Criteria:
+<h3>Acceptance Criteria:</h3>
 
-Column names follow a consistent format.
+* Column names follow a consistent format.
 
-Missing or invalid values are handled appropriately.
+* Missing or invalid values are handled appropriately.
 
-Amounts and dates are converted to proper data types.
+* Amounts and dates are converted to proper data types.
 
-Cleaned output is ready for further analysis.
+* Cleaned output is ready for further analysis.
 
 Assigned To: Yash, Devarsh
 Branch: feature/US2-clean-data
 
-US3 — Income and Expense Summary
+<h3>US3 — Income and Expense Summary</h3>
 
 Story:
 As a user, I want a summary of total income, total expenses, and net balance so that I can quickly understand my financial overview.
 
-Acceptance Criteria:
+<h3>Acceptance Criteria:</h3>
 
-Income (positive amounts) is summed accurately.
+* Income (positive amounts) is summed accurately.
 
-Expenses (negative amounts) are summed accurately.
+* Expenses (negative amounts) are summed accurately.
 
-Net total is calculated correctly.
+* Net total is calculated correctly.
 
-Output is clear, readable, and easy to interpret.
+* Output is clear, readable, and easy to interpret.
 
 Assigned To: Abhiyan, Devarsh
 Branch: feature/US3-income-expense-summary
 
-US4 — Top Expense Categories
+<h3>US4 — Top Expense Categories</h3>
 
 Story:
 As a user, I want to see my top spending categories so that I can understand where most of my money goes.
 
-Acceptance Criteria:
+<h3>Acceptance Criteria:</h3>
 
-Categories are grouped and sorted by total expense amount.
+* Categories are grouped and sorted by total expense amount.
 
-The top 5 categories are displayed.
+* The top 5 categories are displayed.
 
-Missing category values are handled safely.
+* Missing category values are handled safely.
 
-Results are formatted clearly.
+* Results are formatted clearly.
 
 Assigned To: Bibal
 Branch: feature/US4-top-categories
 
-US5 — Monthly Summary
+<h3>US5 — Monthly Summary</h3>
 
 Story:
 As a user, I want a month-by-month breakdown of income and expenses so that I can understand financial trends over time.
 
-Acceptance Criteria:
+<h3>Acceptance Criteria:</h3>
 
-Transactions are grouped correctly by month.
+* Transactions are grouped correctly by month.
 
-Monthly income, expenses, and net totals are displayed.
+* Monthly income, expenses, and net totals are displayed.
 
-Date parsing is handled without errors.
+* Date parsing is handled without errors.
 
-Output is easy to read and interpret.
+* Output is easy to read and interpret.
 
 Assigned To: Abhiyan
 Branch: feature/US5-monthly-summary
 
-US6 — Detect Unusual Transactions
+<h3>US6 — Detect Unusual Transactions</h3>
 
 Story:
 As a user, I want unusual or suspicious transactions to be highlighted so that I can review them manually.
 
-Acceptance Criteria:
+<h3>Acceptance Criteria:</h3>
 
-A logical rule identifies unusual values (e.g., extremely high amounts).
+* A logical rule identifies unusual values (e.g., extremely high amounts).
 
-Output clearly lists unusual transactions.
+* Output clearly lists unusual transactions.
 
-The method handles unexpected values safely.
+* The method handles unexpected values safely.
 
-The user can easily understand why a transaction is flagged.
+* The user can easily understand why a transaction is flagged.
 
 Assigned To: Abhiyan
 Branch: feature/US6-unusual-transactions
 
-Task Breakdown
+<h2>Task Breakdown</h2>
 
-Each user story includes the following tasks:
+* Each user story includes the following tasks:
 
-Review the dataset to understand required fields
+* Review the dataset to understand required fields
 
-Create or update the function linked to the story
+* Create or update the function linked to the story
 
-Test the function with sample data
+* Test the function with sample data
 
-Commit changes with a clear message referencing the US number
+* Commit changes with a clear message referencing the US number
 
-Push updates to the corresponding feature branch
+* Push updates to the corresponding feature branch
 
-Open a Pull Request for code review
+* Open a Pull Request for code review
 
-Move the task through Taiga: New → In Progress → Testing → Done
+* Move the task through Taiga: New → In Progress → Testing → Done
 
-Sprint Planning Outcomes
+<h2>Sprint Planning Outcomes</h2>
 
 By the end of the sprint planning session, the team finalized:
 
-A clear and achievable sprint goal
+* A clear and achievable sprint goal
 
-Six user stories with well-defined acceptance criteria
+* Six user stories with well-defined acceptance criteria
 
-Story assignments for all team members
+* Story assignments for all team members
 
-Feature branches created for each user story
+* Feature branches created for each user story
 
-Tasks added and organized in Taiga
+* Tasks added and organized in Taiga
 
-Agreement on the collaboration workflow, communication process, and code review standards
+* Agreement on the collaboration workflow, communication process, and code review standards
 
 With planning complete, the team has moved into the development phase of the sprint.
