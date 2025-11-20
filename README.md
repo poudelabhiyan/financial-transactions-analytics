@@ -23,22 +23,8 @@ This tool works with the financial_transactions.csv dataset and includes a set o
   * Full traceability between code, user stories, and tasks
 
 <h2>Repository Structure</h2>
-Financial_Transactions_Summary_Tool/
-  │
-    ├── src/
-      │   └── transactions_tool.py
-│
-├── data/
-│   └── financial_transactions.csv
-│
-├── docs/
-│   └── screenshots, reports, and notes
-│
-├── tests/
-│   └── basic test scripts
-│
-├── README.md
-└── .gitignore
+<img width="393" height="458" alt="image" src="https://github.com/user-attachments/assets/23e5f9f1-d887-4f2a-9514-a18f82d894f7" />
+
 
 
 <h2>User Story Branches, Owners, and Assigned Functions</h2>
