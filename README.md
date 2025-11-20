@@ -24,9 +24,9 @@ This tool works with the financial_transactions.csv dataset and includes a set o
 
 <h2>Repository Structure</h2>
 Financial_Transactions_Summary_Tool/
-│
-├── src/
-│   └── transactions_tool.py
+  │
+    ├── src/
+      │   └── transactions_tool.py
 │
 ├── data/
 │   └── financial_transactions.csv
@@ -68,9 +68,11 @@ Example:
 
 from src.transactions_tool import *
 
-df = read_data("data/financial_transactions.csv")
-df_clean = clean_data(df)
-summary = summarize_income_expenses(df_clean)
+  df = read_data("data/financial_transactions.csv")
+
+  df_clean = clean_data(df)
+
+  summary = summarize_income_expenses(df_clean)
 
 <h2>Collaboration and Workflow</h2>
 
