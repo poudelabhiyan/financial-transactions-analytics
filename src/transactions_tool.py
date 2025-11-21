@@ -127,6 +127,9 @@ def top_expense_categories(df: pd.DataFrame, top_n: int = 5) -> pd.DataFrame:
         Categories and their total expense amounts, sorted
         from highest to lowest.
     """
+    
+# small update done by bibal
+    
     df = df.copy()
 
     # Work only with expenses
