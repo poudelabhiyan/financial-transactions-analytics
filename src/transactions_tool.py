@@ -225,10 +225,10 @@ def detect_unusual_transactions(
     else:
         mean = df["amount"].mean()
         std = df["amount"].std()
-        limit = mean + 3 * std
-        mask = df["amount"].abs() >= limit
+        lim = mean + 3 * std
+        ma = df["amount"].abs() >= lim
 
-    outliers = df.loc[mask].copy()
+    outliers = df.loc[ma].copy()
     return outliers
 
 
