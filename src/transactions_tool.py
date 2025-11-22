@@ -154,8 +154,6 @@ def monthly_summary(df: pd.DataFrame) -> pd.DataFrame:
     """
     Create a monthly summary of income, expenses, and net balance.
 
-    Groups data by year and month.
-
     Returns a DataFrame with:
     - year_month (YYYY-MM)
     - Total Income
