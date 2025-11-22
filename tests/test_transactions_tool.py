@@ -94,6 +94,6 @@ def test_detect_unusual_transactions_threshold():
     df = clean_data(_sample_dataframe())
     result = detect_unusual_transactions(df, threshold=500)
 
-    # Should detect the income 1000.0
+    # Should detect the income 1000.00
     assert not result.empty
     assert result.iloc[0]["amount"] == 1000.0
